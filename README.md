@@ -59,7 +59,7 @@ pipeline{
     stages{
         stage('Build Maven'){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Gusta011/ProjetoTarefa-Spring']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/zblacky123/ProjetoTarefa-Spring']])
                 sh 'mvn clean install'
             }
         }
